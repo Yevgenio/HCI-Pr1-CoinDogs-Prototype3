@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="boukingolts.yevgeni.prototype3">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Prototype3">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Sandbox"
+            android:label="@string/title_activity_sandbox"></activity>
+        <activity
+            android:name=".Navigator"
+            android:label="@string/title_activity_navigator"
+            android:theme="@style/Theme.Prototype3.NoActionBar" />
+        <activity
+            android:name=".RunSummary"
+            android:label="@string/title_activity_run_summary"
+            android:theme="@style/Theme.Prototype3.NoActionBar" />
+        <activity
+            android:name=".RouteMap"
+            android:label="@string/title_activity_route_map"
+            android:theme="@style/Theme.Prototype3.NoActionBar" />
+        <activity
+            android:name=".Table"
+            android:label="@string/title_activity_table"
+            android:theme="@style/Theme.Prototype3.NoActionBar" />
+        <activity android:name=".RunDetails" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".textActivity" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.Prototype3.NoActionBar" />
+        <activity
+            android:name=".QuickMap"
+            android:label="@string/title_activity_quick_map" />
+        <activity android:name=".Search" />
+        <activity android:name=".QuickRun" />
+        <activity android:name=".StartRunning" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
